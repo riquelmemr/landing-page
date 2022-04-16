@@ -179,3 +179,43 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+.grid-one-content {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter; /***contador***/
+}
+
+.grid h3 {
+    font-size: 3.5rem;
+    position: relative; /***para que o contador fique dentro do h3***/
+    padding-left: 6rem;
+    padding-bottom: 2.5rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -3.5rem;
+    left: -0.5rem;
+    transform: rotate(5deg);
+}
