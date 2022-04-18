@@ -165,8 +165,7 @@ p {
     justify-content: center;
 }
 
-.intro-img img, 
-.intro-img svg {
+.intro-img img, .intro-img svg {
     width: 100%;
     height: auto;
 }
