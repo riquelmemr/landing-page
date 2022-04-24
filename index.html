@@ -11,11 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#">LOGO</a>
+            </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
                     <li><a href="#grid-one">Grid Jobs</a></li>
@@ -235,7 +239,8 @@
         </div>
     </section>
     <footer class="white-bg footer">
-        <p><a href="https://github.com/riquelmemr">Feito por Riquelme</a></p>
+        <p><a href="https://github.com/riquelmemr">Feito por Riquelme 😄</a></p>
     </footer>
+    <a class="back-to-home" href="#">➤</a>
 </body>
 </html>
