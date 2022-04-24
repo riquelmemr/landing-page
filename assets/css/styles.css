@@ -424,9 +424,13 @@ table caption {
     .menu-spacing {
         display: none;
     }
+
+    .contact-form {
+        grid-column: span 1;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     h2 {
         font-size: 5rem;
     }
