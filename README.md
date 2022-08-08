@@ -1,4 +1,4 @@
 # landing-page
-Criando uma Landing Page com HTML e CSS
+📄 Criação de uma landing page para utilizando grid, flex-box, assim como animação de imagens e outros. Desenvolvido em curso de JavaScript, TypeScript e HTML/CSS da Udemy.
 
 Link: https://landingpagermcursojs.netlify.app/
